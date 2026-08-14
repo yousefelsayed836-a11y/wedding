@@ -1,26 +1,35 @@
 (function () {
   var WEDDING_DATE = new Date("2026-08-18T20:00:00+02:00");
+  var last = { days: null, hours: null, minutes: null, seconds: null };
 
   function pad(n) {
     return String(n).padStart(2, "0");
   }
 
-  function tick() {
-    var elDays = document.getElementById("cd-days");
-    var elHours = document.getElementById("cd-hours");
-    var elMinutes = document.getElementById("cd-minutes");
-    var elSeconds = document.getElementById("cd-seconds");
-    var wrap = document.getElementById("cd-wrap");
-    var arrived = document.getElementById("cd-arrived");
+  function setValue(el, value, key) {
+    if (!el) return;
+    var text = String(value);
+    if (last[key] !== null && last[key] !== text) {
+      el.classList.remove("pulse");
+      // eslint-disable-next-line no-unused-expressions
+      el.offsetWidth; // restart animation
+      el.classList.add("pulse");
+    }
+    el.textContent = text;
+    last[key] = text;
+  }
 
-    if (!elDays) return;
+  function tick() {
+    var wraps = document.querySelectorAll(".countdown");
+    var arrivedMsgs = document.querySelectorAll(".js-arrived, #cd-arrived");
+    if (!wraps.length) return;
 
     var now = new Date();
     var diff = WEDDING_DATE.getTime() - now.getTime();
 
     if (diff <= 0) {
-      wrap.classList.add("hide-when-arrived");
-      arrived.classList.add("show");
+      wraps.forEach(function (el) { el.classList.add("hide-when-arrived"); });
+      arrivedMsgs.forEach(function (el) { el.classList.add("show"); });
       return;
     }
 
@@ -30,10 +39,10 @@
     var minutes = Math.floor((totalSeconds % 3600) / 60);
     var seconds = totalSeconds % 60;
 
-    elDays.textContent = days;
-    elHours.textContent = pad(hours);
-    elMinutes.textContent = pad(minutes);
-    elSeconds.textContent = pad(seconds);
+    document.querySelectorAll(".js-days, #cd-days").forEach(function (el) { setValue(el, days, "days"); });
+    document.querySelectorAll(".js-hours, #cd-hours").forEach(function (el) { setValue(el, pad(hours), "hours"); });
+    document.querySelectorAll(".js-minutes, #cd-minutes").forEach(function (el) { setValue(el, pad(minutes), "minutes"); });
+    document.querySelectorAll(".js-seconds, #cd-seconds").forEach(function (el) { setValue(el, pad(seconds), "seconds"); });
   }
 
   tick();
