@@ -463,6 +463,11 @@ body[lang="ar"] .arrived-msg {
   object-position: center 15%;
 }
 
+.polaroid-photo img.cutout {
+  object-fit: contain;
+  padding: 10%;
+}
+
 .polaroid-photo .fallback {
   position: absolute;
   inset: 0;
