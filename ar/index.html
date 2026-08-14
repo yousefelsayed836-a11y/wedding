@@ -7,11 +7,11 @@
 <meta name="description" content="انضموا إلينا للاحتفال بزفاف محمد وآية يوم 18 أغسطس 2026 في قاعات سفير بالإسكندرية.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Jost:wght@300;400;500&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Rakkas&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body lang="ar">
-<div class="stars" aria-hidden="true"></div>
+<div class="petals" id="petals" aria-hidden="true"></div>
 
 <nav class="langswitch">
   <a href="../en/index.html">EN · English</a>
@@ -33,7 +33,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 6.6L20 10l-6.2 1.4L12 18l-1.8-6.6L4 10l6.2-1.4L12 2z"/></svg>
     </div>
 
-    <section class="gallery-section">
+    <section class="gallery-section reveal">
       <div class="gallery">
         <div class="photo-frame">
           <img src="../assets/images/couple-childhood-1.jpg" alt="آية في الصغر" onerror="this.remove()">
@@ -55,13 +55,13 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 6.6L20 10l-6.2 1.4L12 18l-1.8-6.6L4 10l6.2-1.4L12 2z"/></svg>
     </div>
 
-    <p class="love-note">قلبين اتحدو في حكاية واحدة.. وأول سطر فيها إنكم تكونوا جنبنا.</p>
+    <p class="love-note reveal">قلبين اتحدو في حكاية واحدة.. وأول سطر فيها إنكم تكونوا جنبنا.</p>
 
     <div class="divider section-gap" aria-hidden="true">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 6.6L20 10l-6.2 1.4L12 18l-1.8-6.6L4 10l6.2-1.4L12 2z"/></svg>
     </div>
 
-    <section>
+    <section class="reveal">
       <p class="countdown-label">العد التنازلي لفرحنا</p>
       <div class="countdown" id="cd-wrap">
         <div class="count-unit"><span class="count-num" id="cd-days">–</span><span class="count-word">يوم</span></div>
@@ -76,7 +76,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 6.6L20 10l-6.2 1.4L12 18l-1.8-6.6L4 10l6.2-1.4L12 2z"/></svg>
     </div>
 
-    <section class="details">
+    <section class="details reveal">
       <p class="detail-row">الثلاثاء، 18 أغسطس 2026</p>
       <p class="detail-sub">الساعة 8 مساءً</p>
     </section>
@@ -85,7 +85,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 6.6L20 10l-6.2 1.4L12 18l-1.8-6.6L4 10l6.2-1.4L12 2z"/></svg>
     </div>
 
-    <section class="venue">
+    <section class="venue reveal">
       <div class="venue-photo">
         <img src="../assets/images/venue-1.jpg" alt="قاعات سفير" onerror="this.remove()">
       </div>
@@ -110,7 +110,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l1.8 6.6L20 10l-6.2 1.4L12 18l-1.8-6.6L4 10l6.2-1.4L12 2z"/></svg>
     </div>
 
-    <footer class="footer">
+    <footer class="footer reveal">
       <p class="footer-line">احنا مستنينكم في فرحنا</p>
       <p class="footer-sub">مع حبنا، محمد وآية</p>
       <p class="monogram">M &amp; A · 18 · 08 · 2026</p>
@@ -119,6 +119,7 @@
   </div>
 </main>
 
+<script src="../assets/js/motion.js"></script>
 <script src="../assets/js/countdown.js"></script>
 </body>
 </html>
