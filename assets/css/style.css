@@ -224,6 +224,7 @@ img {
   text-transform: uppercase;
   color: var(--rose-deep);
   margin: 0 0 18px;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 body[lang="ar"] .eyebrow {
@@ -242,7 +243,12 @@ body[lang="ar"] .eyebrow {
   line-height: 1.05;
   margin: 0;
   color: var(--rose-deep);
-  text-shadow: 0 10px 26px rgba(230, 61, 117, 0.22);
+  text-shadow:
+    0 0 3px rgba(90, 39, 64, 0.4), 1px 1px 3px rgba(90, 39, 64, 0.35), -1px -1px 3px rgba(90, 39, 64, 0.35),
+    0 0 6px rgba(90, 39, 64, 0.25),
+    0 0 4px var(--white), 0 0 4px var(--white),
+    0 0 30px rgba(255, 255, 255, 0.8),
+    0 10px 26px rgba(230, 61, 117, 0.22);
 }
 
 .name-line {
@@ -295,6 +301,7 @@ body[lang="ar"] .names {
   max-width: 34ch;
   color: var(--plum-soft);
   font-size: clamp(0.95rem, 2.4vw, 1.05rem);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 /* ---------- Divider ---------- */
@@ -356,6 +363,7 @@ body[lang="ar"] .names {
   text-transform: uppercase;
   color: var(--rose-deep);
   margin: 0 0 22px;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 body[lang="ar"] .countdown-label {
@@ -744,6 +752,7 @@ body[lang="ar"] .love-lines p:nth-child(4) { font-size: clamp(1.25rem, 4.2vw, 1.
 
 .details {
   text-align: center;
+  margin-top: clamp(18px, 4vw, 28px);
 }
 
 .detail-row {
@@ -751,6 +760,7 @@ body[lang="ar"] .love-lines p:nth-child(4) { font-size: clamp(1.25rem, 4.2vw, 1.
   font-family: var(--font-heading-en);
   color: var(--plum);
   font-size: clamp(1rem, 2.6vw, 1.15rem);
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 body[lang="ar"] .detail-row {
@@ -761,6 +771,7 @@ body[lang="ar"] .detail-row {
   margin: 0 0 4px;
   color: var(--plum-soft);
   font-size: 0.92rem;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 16px rgba(255, 255, 255, 0.6);
 }
 
 /* ---------- Venue card ---------- */
