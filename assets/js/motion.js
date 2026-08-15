@@ -4,14 +4,14 @@
   // Floating petals
   var container = document.getElementById("petals");
   if (container && !reduceMotion) {
-    var symbols = ["🌸", "❀", "✿", "🤍"];
     var count = window.innerWidth < 600 ? 10 : 16;
     for (var i = 0; i < count; i++) {
       var petal = document.createElement("span");
       petal.className = "petal";
-      petal.textContent = symbols[i % symbols.length];
+      var size = 9 + Math.random() * 9;
       petal.style.left = Math.random() * 100 + "%";
-      petal.style.fontSize = 0.8 + Math.random() * 0.9 + "rem";
+      petal.style.width = size + "px";
+      petal.style.height = size + "px";
       petal.style.animationDuration = 10 + Math.random() * 14 + "s";
       petal.style.animationDelay = Math.random() * 12 + "s";
       container.appendChild(petal);
