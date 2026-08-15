@@ -488,7 +488,7 @@ body[lang="ar"] .arrived-msg {
   margin: 0;
   background: var(--white);
   padding: 10px 10px 0;
-  width: clamp(180px, 44vw, 240px);
+  width: clamp(200px, 50vw, 280px);
   box-shadow: 0 16px 28px -16px var(--shadow), 0 3px 8px rgba(0, 0, 0, 0.06);
   opacity: 0;
   transform: translateY(30px) rotate(var(--r, 0deg)) scale(0.92);
