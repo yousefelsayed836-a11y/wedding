@@ -87,9 +87,9 @@ img {
   background-image: linear-gradient(180deg, rgba(255, 225, 236, 0.55), rgba(255, 245, 248, 0.4)), url("../images/couple-engagement.png");
   background-repeat: no-repeat;
   background-position: center, center;
-  background-size: cover, auto 78%;
+  background-size: cover, auto 108%;
   background-blend-mode: soft-light;
-  filter: blur(14px) saturate(1.02);
+  filter: blur(6px) saturate(1.02);
   opacity: 0.5;
 }
 
