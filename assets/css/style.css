@@ -84,15 +84,13 @@ img {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: linear-gradient(180deg, rgba(255, 225, 236, 0.9), rgba(255, 245, 248, 0.7)), url("../images/couple-engagement.png");
+  background-image: linear-gradient(180deg, rgba(255, 225, 236, 0.55), rgba(255, 245, 248, 0.4)), url("../images/couple-engagement.png");
   background-repeat: no-repeat;
-  background-position: center, center 10%;
-  background-size: cover, 130% auto;
+  background-position: center, center;
+  background-size: cover, auto 78%;
   background-blend-mode: soft-light;
-  filter: blur(50px) brightness(1.45) saturate(0.9);
-  opacity: 0.24;
-  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 22%, transparent 62%);
-  mask-image: linear-gradient(to bottom, black 0%, black 22%, transparent 62%);
+  filter: blur(14px) saturate(1.02);
+  opacity: 0.5;
 }
 
 /* ---------- Floating petals ---------- */
@@ -217,21 +215,6 @@ img {
 
 .hero {
   text-align: center;
-}
-
-.flourish {
-  display: block;
-  width: 34px;
-  height: 34px;
-  margin: 0 auto 14px;
-  color: var(--rose);
-  opacity: 0.85;
-  animation: flourishPulse 3s ease-in-out infinite;
-}
-
-@keyframes flourishPulse {
-  0%, 100% { opacity: 0.8; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.1) rotate(8deg); }
 }
 
 .eyebrow {
